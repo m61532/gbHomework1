@@ -1,11 +1,20 @@
 package ru.geekbrains.homework1;
 
+import static java.lang.Math.sqrt;
+
 public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
+        // Задание со звездочкой
+        System.out.println("\n" + getHypotenuseLength(2, 3));
+    }
+
+    public static double getHypotenuseLength(double a, double b) {
+        double c = sqrt(a * a + b * b);
+        return c;
     }
 
     private static void printThreeWords() {
